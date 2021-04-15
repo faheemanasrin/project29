@@ -12,6 +12,7 @@ class Box {
     }
     display(){
     var angle = this.body.angle;
+    console.log(this.body.speed);
       push();
       translate(this.body.position.x, this.body.position.y);
       rotate(angle);
@@ -19,4 +20,19 @@ class Box {
       rect( 0, 0, this.width, this.height);
       pop();
     }
+    score(){
+      if (this.body.speed>5 && this.body.speed<15){
+      score++;
+      
+      }
+      }
+
+
+
+
   };
+
+
+
+
+

@@ -5,6 +5,7 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var box, slingshot;
+var score=0;
 
 
 
@@ -44,6 +45,12 @@ function setup(){
 
 function draw(){
     background(130);
+
+    textSize(25);
+    
+    text("SCORE:  "+score,750,40);
+
+
     Engine.update(engine);
     //strokeWeight(4);
     box1.display();
@@ -62,11 +69,12 @@ function draw(){
     ground.display();
     stand.display();
     paper.display();
-   
-   
-    
-    //log6.display();
-    slingshot.display();    
+     slingshot.display();    
+
+    box1.score();
+
+
+
 }
 
 function mouseDragged(){
