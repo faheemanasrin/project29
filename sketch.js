@@ -9,7 +9,12 @@ var score=0;
 
 var backgroundImg
 
-
+function preload() {
+    
+    
+     //backgroundImg = loadImage("sprites/bg.png");
+        gettime();
+    }
         
     
 
@@ -47,7 +52,7 @@ function setup(){
 
     //log6 = new Log(230,180,80, PI/2);
     slingshot = new SlingShot(paper.body,{x:100, y:200});
-    gettime();
+  
 }
 
 function draw(){
