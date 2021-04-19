@@ -122,10 +122,10 @@ async function gettime (){
     var datetime=resp.datetime 
     var time=datetime.slice(11,13)
     if (time>=06 && time<=17){
-        bg="sprites/bg.png"
+        bg="bg.png"
     }
     else {
-    bg="sprites/bg2.jpg"
+    bg="bg2.jpg"
 }
 backgroundImg=loadImage(bg)
 
